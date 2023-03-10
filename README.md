@@ -6,7 +6,7 @@ It returns a response delayed accordingly, containing the id.
 docker build -t throttle-responder .
 
 ## Start the container
-docker run -p 5000:5000 throttle-responder
+docker run --name throttle-responder -p 5000:5000 throttle-responder
 
 ## Example usage
 curl --location --request POST 'http://localhost:5000/throttle' \
