@@ -13,5 +13,5 @@ curl --location --request POST 'http://localhost:5000/throttle' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "throttle": 1000,
-    "id": "sample_id",
+    "id": "sample_id"
 }'
