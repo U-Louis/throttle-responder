@@ -17,4 +17,4 @@ def throttle():
     return response_data
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    run_simple('localhost', 5000, app, threaded=True)
